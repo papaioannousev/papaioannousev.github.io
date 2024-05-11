@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<link href='./style.css' rel='stylesheet'>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <header>
+            <br>
+            <div id="welcome">
+                <h1>Welcome to my website!</h1>
+            </div>
+            
+            <ul>
+                <li><a style="text-decoration:none" 
+                    href="./index.html">Home</a></li>
+                <li><a style="text-decoration:none"
+                    href="./visualizations.html">Visualizations</a></li>
+                <li><a style="text-decoration:none"
+                    class="active" href="./svg_visual.html">SVGs</a></li>
+                <li><a style="text-decoration:none"
+                    href="./acknowledgements.html">Acknowledgements</a></li>
+                </ul>
+                <br>
+        </header>
+        <hr>
+        <main>
+            
+            <div class="column_side">
+                <br> 
+                <br>
+                <br> 
+                <br> 
+
+                <svg width="100" height="100" >
+                    <circle id="circle1" cx="50" cy="50" r="40" stroke="#11009E" 
+                    stroke-width="3" fill="#E6B9DE" onclick="changeStyle()" >
+                        <animate
+                            attributeName="r"
+                            begin="0s"
+                            dur="7s"
+                            from="30"
+                            to="90%"
+                            repeatCount="indefinite" />
+                        </circle>
+                </svg> 
+
+                <script>
+                    function changeStyle() {
+                    document.getElementById("circle1").style.fill="#11009E";
+                    }
+                </script>
+    
+
+                <br> 
+                <br>
+                <br> 
+                <br>
+
+
+                <svg width="100%" height="100">
+                    <circle id="circle2" cx="50" cy="50" r="50" style="fill:#294B29;" onclick="changeRadius()">
+                    <animate
+                        attributeName="cx"
+                        begin="0s"
+                        dur="8s"
+                        from="50"
+                        to="90%"
+                        repeatCount="indefinite" />
+                    </circle>
+                </svg>
+
+                <script>
+                function changeRadius() {
+                    document.getElementById("circle2").setAttribute("r", "30");
+                }
+                </script>
+
+                <br> 
+                <br>
+                <br> 
+                <br>
+
+
+                <svg width="200" height="180" >
+                    <rect id="rect1" x="30" y="30" height="110" width="110" 
+                    style="fill:#191717" onclick="changeDisap()">
+                    <animateTransform
+                        attributeName="transform"
+                        begin="0s"
+                        dur="10s"
+                        type="rotate"
+                        from="0 85 85"
+                        to="360 85 85"
+                        repeatCount="indefinite"/>
+                    </rect>
+                </svg>
+                <script>
+                    function changeDisap() {
+                    document.getElementById("rect1").style.fill="#FFF8EA";
+                    }
+                </script>
+            
+                </svg> 
+            </div>
+           
+
+            <div class="column_middle">
+                <h2>My first SVGs</h2>
+                <p>These are my first SVGs, try clicking on them to see the magic! </p>
+                <br>
+                <p>Click the pink circle to make it blue. </p>
+                <br>
+                <p>Click the green circle to make it smaller. </p>
+                <br>
+                <p>Click the black rectangle to make it disappear. </p>
+            
+            </div>
+
+        </main>
+        <footer> Made with 
+            <br>
+            <img src="heart.png"  
+            alt="heart" 
+            class="heart-img">
+        </footer>
+    </body>
+
+
+
+
+
+</html>
