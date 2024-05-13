@@ -63,7 +63,7 @@ main {
 }
 
 .column_middle {
-    background-color: #ecd2d2;
+    background-color: #cfb7b0;
     width: 50%;
     margin-right: 50px;
     margin-left: 100px;
@@ -99,6 +99,15 @@ body {
     width: 320px;
     height: 400px; 
     border: 3px solid #594545;
+}
+
+.logo-img {
+    background-position: center;
+    /* border-radius: 50%; */
+    padding-top: 0px;
+    width: 250px;
+    height: 250px; 
+    /* border: 3px solid #594545; */
 }
 
 .heart-img {
