@@ -76,6 +76,31 @@ main {
 
 }
 
+.one_column {
+    background-color: #cfb7b0;
+    width: 80%;
+    margin-right: 50px;
+    margin-left: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    float: center;
+    position: relative;
+    text-align: justify;
+    overflow: auto;
+    height: 400px;
+
+}
+
+.one_column::-webkit-scrollbar {
+    display: none;
+}
+
+.one_column {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
 
 footer {
     position: fixed;
